@@ -1,11 +1,6 @@
 # Pre-work - Hoai Viet Blog*
 
-> HINT: Please
-> - include this README.md in your project and fill out the information. 
-> - remove the `README.rdoc` file that Rails generates. 
-> - remove all the HINT blocks in this file.
-
-**Name of your app** is a Ruby on Rails blog application.
+Hoai Viet's Blog** is a Ruby on Rails blog application.
 
 Submitted by: **Cao Hoai Viet**
 
