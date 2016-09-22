@@ -1,5 +1,6 @@
-<h1>New Article</h1>
+<div class="container">
+  <h3>New Article</h3>
 
-<%= render 'form', article: @article %>
-
-<%= link_to 'Back', articles_path %>
+  <%= render 'form', article: @article %>
+  <%= link_to 'Back', articles_path, class: 'btn btn-info btn-sm'%>
+</div>

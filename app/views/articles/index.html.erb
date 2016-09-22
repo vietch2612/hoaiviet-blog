@@ -1,11 +1,26 @@
-<p id="notice"><%= notice %></p>
+<% if !notice.to_s.empty? then %>
+  <div class="alert alert-success" role="alert">
+    <%= notice %>
+  </div>
+<% end %>
 
 <div class="container">
   <h1>Cao Hoai Viet's Blog</h1>
   <h3>This is my first Rails Application for CoderSchool</h3>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for blog post">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Go!</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  </p>
 
   <%= render @articles %>
   <br>
 
-  <%= link_to 'New Article', new_article_path, class: 'btn btn-primary'%>
+  <%= link_to 'New Article', new_article_path, class: 'btn btn-info'%>
 </div>
