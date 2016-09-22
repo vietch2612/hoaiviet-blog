@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# hoaiviet-blog
+Prework for Coderschool
+>>>>>>> 6216cd8f9ce28142241ff7939c28e4ac9cde15be
