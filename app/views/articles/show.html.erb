@@ -10,7 +10,7 @@
     <p>
     <h4 class="card-title"><%= @article.title %></h4>
     </p>
-    <p class="card-text"><%= @article.body %></p>
+    <p class="card-text"><%= @markdown.render(@article.body).html_safe %></p>
 
     <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-sm btn-warning' %>
     <%= link_to 'Back', articles_path, class: 'btn btn-sm btn-info' %>
