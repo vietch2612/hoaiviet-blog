@@ -9,12 +9,15 @@
   <h3>This is my first Rails Application for CoderSchool</h3>
   <div class="row">
     <div class="col-lg-8">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for blog post">
-        <span class="input-group-btn">
-          <button class="btn btn-secondary" type="button">Go!</button>
-        </span>
-      </div>
+      <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
+        <div class="input-group">
+          <%= text_field_tag :search, params[:search], placeholder: "Search title", class: 'form-control', type: 'text' %>
+          <span class="input-group-btn">
+            <%= submit_tag "Search", class: 'btn btn-secondary' %>
+            <%# <%= submit_tag "Search" %1> %>
+          </span>
+        </div>
+      <% end %>
     </div>
   </div>
   </p>
