@@ -32,6 +32,11 @@ gem 'jbuilder', '~> 2.5'
 # Bootstrap gem for Rails
 gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'redcarpet'
+# Heroku gem
+gem 'rails_12factor', group: :production
+
+# Ruby version
+ruby '2.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,12 +1,12 @@
-# Pre-work - Hoai Viet Blog*
+# Pre-work - HoaiViet's Blog
 
-Hoai Viet's Blog** is a Ruby on Rails blog application.
+**HoaiViet's Blog** is a Ruby on Rails blog application.
 
 Submitted by: **Cao Hoai Viet**
 
-Time spent: 1** hours spent in total
+Time spent: **3** hours spent in total
 
-URL: **Updating**
+URL: *Updating*
 
 ## User Stories
 
@@ -26,19 +26,13 @@ The following **optional** features are implemented:
 * [ ] User can add "tags" to a post, and filter posts by tag. 
 
 The following **additional** features are implemented:
-**  [ ] List anything else that you can get done to improve the app functionality!
+* [x] Config root route to "articles#show" 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-> HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-> `![Video Walkthrough](walkthrough.gif)` 
-> 
-
 ![Video Walkthrough](/path/to/your/gif/file)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
@@ -46,7 +40,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2016, Cao Hoai Viet
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
