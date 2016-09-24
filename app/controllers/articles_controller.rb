@@ -74,7 +74,6 @@ class ArticlesController < ApplicationController
     def set_article
       @article = Article.find(params[:id])
       impressionist(@article)
-      # @article.impressionist_count
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
