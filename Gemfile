@@ -34,6 +34,8 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'redcarpet'
 # Heroku gem
 gem 'rails_12factor', group: :production
+# Count views post
+gem 'impressionist'
 
 # Ruby version
 ruby '2.3.0'
