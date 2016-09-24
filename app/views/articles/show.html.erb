@@ -11,7 +11,33 @@
     <h4 class="card-title"><%= @article.title %></h4>
     </p>
     <p class="card-text"><%= @markdown.render(@article.body).html_safe %></p>
+    <hr>
     <p class="font-italic">Total views: <%= @article.impressionist_count %> time(s).</p>
+    <hr>
+    <div>
+      <h6>Leave a comment:</h6>
+      <%= form_for([@article, @article.comments.build]) do |f| %>
+         <%= f.text_field :commenter, class: 'form-control', placeholder: 'Enter your email or username' %>
+        <%= f.text_area :body ,class: 'form-control', placeholder: 'Enter your comment', rows: "3" %>
+    </br>
+        <%= f.submit "Submit", class: 'btn btn-primary btn-sm'%>
+<% end %>
+    </div>
+    <hr>
+    <h6>Comments</h6>
+    <hr>
+    <% @article.comments.each do |comment| %>
+      <div class="media">
+        <div class="media-body">
+          <h6 class="media-heading"><%= comment.commenter %>
+          <small><%= comment.created_at.to_time %></small>
+          </h6>
+          <%# Body %>
+          <%= comment.body %>
+        </div>
+      </div>
+    <hr>
+    <% end %>
 
     <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-sm btn-warning' %>
     <%= link_to 'Back', articles_path, class: 'btn btn-sm btn-info' %>
