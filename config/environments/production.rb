@@ -66,7 +66,8 @@ Rails.application.configure do
   config.i18n.fallbacks = true
 
   # Stackoverflow
-  config.serve_static_assets = true
+  # config.serve_static_assets = true
+  config.assets.initialize_on_precompile = false
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
